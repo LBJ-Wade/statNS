@@ -62,15 +62,19 @@ Hope the simple demo written in test.c can help you understand:
 2) which variable will store the computation results.
 
 If you want to deploy statNS library so that you can treat it like <math.h> in C standary library, you may run the following command with sudo privilege:
+
 sudo cp lib/* /usr/lib64/
+
 sudo cp src/*.h /usr/include/
 
 After deploy, you are allowed to use #include <statNS.h> to replace the current statement #include "src/statNS.h", and the compile command need to change as (FIRM compile):
+
 gcc test.c -lstatNS -o test.out
 
 Using the FIRM compile command will allow you to compile your own .c files at any path, and allow the output binary files to run at any path on your device.
 
 If you want to make changes to the library, you can modify its source code src/statNS.c, then re-compile it like this:
+
 gcc src/statNS.c -lm -lpthread -shared -fPIC -o lib/libstatNS.so
 
 re-compile the library is necessary for the following reasons:
