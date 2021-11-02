@@ -23,7 +23,7 @@ gcc example/test.c lib/libstatNS.so -o test.out
 
 sudo cp lib/* /usr/lib64/
 
-sudo cp src/*.h /usr/include/
+sudo cp include/*.h /usr/include/
 
 如此一来，程序的开头引用#include "src/statNS.h"可以直接改为#include <statNS.h>，而编译命令则需要改为：
 
@@ -55,7 +55,7 @@ If you want to deploy statNS library so that you can treat it like <math.h> in C
 
 sudo cp lib/* /usr/lib64/
 
-sudo cp src/*.h /usr/include/
+sudo cp include/*.h /usr/include/
 
 After deploy, you are allowed to use #include <statNS.h> to replace the current statement #include "src/statNS.h", and the compile command need to change as (FIRM compile):
 
