@@ -32,18 +32,7 @@ gcc example/test.c -lstatNS -o test.out
 这样你的代码源文件可以任意位置进行编译，而且编译得到的test.out也不受位置束缚，它可以移动到你计算机上的任意位置运行。
 
 
-最后一条，可能短时间内不怎么会用得到，就是从源码编译statNS库的方法：
-
-gcc src/statNS.c -lm -lpthread -shared -fPIC -o lib/libstatNS.so
-
-这一条主要用于以下情况：
-
-1)libstatNS.so由于某种原因损毁或者不兼容你的操作系统，需要重新编译
-
-2)你要对libstatNS.so的内容作出修改，在修改了源码之后想发布statNS库的全新版本
-
-
-你可以随意拷贝/改动/发布我们的代码，如果此代码对你有帮助，请规范引用我们的工作：
+如果此代码对你有帮助，请规范引用我们的工作：
 
 DOI https://doi.org/10.1103/PhysRevC.99.045806
 
@@ -74,15 +63,6 @@ gcc test.c -lstatNS -o test.out
 
 Using the FIRM compile command will allow you to compile your own .c files at any path, and allow the output binary files to run at any path on your device.
 
-If you want to make changes to the library, you can modify its source code src/statNS.c, then re-compile it like this:
-
-gcc src/statNS.c -lm -lpthread -shared -fPIC -o lib/libstatNS.so
-
-re-compile the library is necessary for the following reasons:
-1) libstatNS.so is damaged or incompatiable with your operation system, it needs to be re-compiled
-2) you want to change some function or add your own function in the library
-
-You are free to copy/modify/publish our code. 
-If you found it helpful, please cite our work correctly:
+If you found this code helpful, please cite our work correctly:
 
 DOI https://doi.org/10.1103/PhysRevC.99.045806
