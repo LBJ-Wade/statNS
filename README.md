@@ -46,11 +46,11 @@ gcc src/statNS.c -lm -lpthread -shared -fPIC -o lib/libstatNS.so
 你可以随意拷贝/改动/发布我们的代码，如果此代码对你有帮助，请规范引用我们的工作：
 DOI https://doi.org/10.1103/PhysRevC.99.045806
 
-========================
- English version:
+# English version:
 ========================
 
 Simplest way to compile and use statNS code in C langugue (QUICK compile):
+
 gcc test.c lib/libstatNS.so -o test.out
 
 There are disadvantages in using the QUICK compile command. The compiled binary is dynamically linked with the library file libstatNS.so through relative path, so you can NOT change the relative position bewteen your binary output test.out and the libaray file lib/libstatNS.so, or you will fail to run test.out. What's more, you can only perform the compile at the current path, or your programe won't link to lib/libstatNS.so correctly.
