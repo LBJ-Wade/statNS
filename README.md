@@ -44,6 +44,7 @@ gcc src/statNS.c -lm -lpthread -shared -fPIC -o lib/libstatNS.so
 
 
 你可以随意拷贝/改动/发布我们的代码，如果此代码对你有帮助，请规范引用我们的工作：
+
 DOI https://doi.org/10.1103/PhysRevC.99.045806
 
 # English version:
@@ -83,4 +84,5 @@ re-compile the library is necessary for the following reasons:
 
 You are free to copy/modify/publish our code. 
 If you found it helpful, please cite our work correctly:
+
 DOI https://doi.org/10.1103/PhysRevC.99.045806
